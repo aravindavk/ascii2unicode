@@ -4,15 +4,15 @@ As of now it works with Nudi encoding, This script can convert the text file wit
 
 ## Usage
 
-    <path to python3> <encoding_name> <input_file> <output_file>
+    <path to python3> <path to converter.py> <encoding_name> <input_file> <output_file>
 
 Example(Linux Users)
 
-    python3 nudi sample_input.txt clean_text.txt
+    python3 converter.py nudi sample_input.txt clean_text.txt
 
 Example(Windows users)
 
-    C:\python32\python.exe nudi sample_input.txt clean_text.txt
+    C:\python32\python.exe converter.py nudi sample_input.txt clean_text.txt
 
 
 ## [TODO]
