@@ -1,3 +1,24 @@
-## ASCII to Unicode Converter
+# ASCII to Unicode Encoding Converter for Kannada.
 
-WARNING: DO NOT USE THIS LIBRARY, CHARMAPS ARE NOT UPDATED!
+As of now it works with Nudi encoding, This script can convert the text file with Nudi encoded text to Unicode.
+
+## Usage
+
+    <path to python3> <encoding_name> <input_file> <output_file>
+
+Example(Linux Users)
+
+    python3 nudi sample_input.txt clean_text.txt
+
+Example(Windows users)
+
+    C:\python32\python.exe nudi sample_input.txt clean_text.txt
+
+
+## [TODO]
+
+1. Test with Baraha encoding
+2. Analyze and adopt encoding used in KannadaPrabha
+3. Fix issues if any
+4. Web interface for online use and JSONP API
+5. Converter GUI 

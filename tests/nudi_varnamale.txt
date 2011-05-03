@@ -1,0 +1,55 @@
+C D E F G H Iд J K L M N O CA CB 
+
+PО Pю Pа Q Qц Pюд Pюф Pюх Pи Pиц Pий Pиф Pифц Pк PюA PюB 
+SО R Sа T Tц Rд Rф Rх Sи Sиц Sий Sиф Sифц Sк RA RB
+UО Uю Uа V Vц Uюд Uюф Uюх Uи Uиц Uий Uиф Uифц Uк UюA UюB
+WО Wю Wа X Xц Wюд Wюф Wюх Wи Wиц Wий Wиф Wифц Wк WюA WюB
+
+ZО Zю Zа a aц Zюд Zюф Zюх Zи Zиц Zий Zиф Zифц Zк ZюA ZюB
+bО bю bа c cц bюд bюф bюх bи bиц bий bиф bифц bк bюA bюB
+eО d eа f fц dд dф dх eи eиц eий eиф eифц eк dA dB
+gюhiО gюhд gюhiа jhд jhдц gюhдд gюhдф gюhдх gиhд gиhдц gиhдй gиhф gиhфц gюhiк gюhдA gюhдB
+
+mО l mа n nц lд lф lх mи mиц mий mиф mифц mк lA lB
+oО oю oа p pц oюд oюф oюх oи oиц oий oиф oифц oк oюA oюB
+qО qю qа r rц qюд qюф qюх qи qиц qий qиф qифц qк qюA qюB
+qsО qsю qsа rЭ rЭц qsюд qsюф qsюх qsи qsиц qsий qsиф qsифц qsк qsюA qsюB
+uО t uа tб tбц tд tф tх uи uиц uий uиф uифц uк tA tB
+
+vО vю vа w wц vюд vюф vюх vи vиц vий vиф vифц vк vюA vюB
+xО xю xа y yц xюд xюф xюх xи xиц xий xиф xифц xк xюA xюB
+zО zю zа ╒ ╒ц zюд zюф zюх zи zиц zий zиф zифц zк zюA zюB
+zsО zsю zsа ╒Э ╒Эц zsюд zsюф zsюх zsи zsиц zsий zsиф zsифц zsк zsюA zsюB
+ёО ёю ёа ╓ ╓ц ёюд ёюф ёюх ёи ёиц ёий ёиф ёифц ёк ёюA ёюB
+
+╔О ╔ю ╔а ╕ ╕ц ╔юд ╔юф ╔юх ╔и ╔иц ╔ий ╔иф ╔ифц ╔к ╔юA ╔юB
+╔sО ╔sю ╔sа ╕Э ╕Эц ╔sюд ╔sюф ╔sюх ╔sи ╔sиц ╔sий ╔sиф ╔sифц ╔sк ╔sюA ╔sюB
+╗О ╖ ╗а ╘ ╘ц ╖д ╖ф ╖х ╗и ╗иц ╗ий ╗иф ╗ифц ╗к ╖A ╖B
+╗sО ╗sю ╗sа ╘Э ╘Эц ╗sюд ╗sюф ╗sюх ╗sи ╗sиц ╗ий ╗sиф ╗sифц ╗sк ╗sюA ╗sюB
+╙юiО ╙юд ╙юiа ╚д ╚дц ╙юдд ╙юдф ╙юдх ╙ид ╙идц ╙идй ╙иф ╙ифц ╙юiк ╙юдA ╙юдB
+
+AiюiО Aiюд Aiюiа ╛д ╛дц Aiюдд Aiюдф Aiюдх Aiид Aiидц Aiидй Aiиф Aiифц Aiюiк AiюдA AiюдB
+gО gю gа j jц gюд gюф gюх gи gиц gий gиф gифц gк gюA gюB
+╞О ╝ ╞а ╟ ╟ц ╝д ╝ф ╝х ╞и ╞иц ╞ий ╞иф ╞ифц ╞к ╝A ╝B
+╙О ╙ю ╙а ╚ ╚ц ╙юе ╙юг ╙юх ╙и ╙иц ╙ий ╙иг ╙игц ╙к ╙юA ╙юB
+ ╠О ╠ю ╠а ╡ ╡ц ╠юд ╠юф ╠юх ╠и ╠иц ╠ий ╠иф ╠ифц ╠к ╠юA ╠юB 
+ ╣О ╣ю ╣а ╤ ╤ц ╣юд ╣юф ╣юх ╣и ╣иц ╣ий ╣иф ╣ифц ╣к ╣юA ╣юB
+╦О ╦ю ╦а ╧ ╧ц ╦юд ╦юф ╦юх ╦и ╦иц ╦ий ╦иф ╦ифц ╦к ╦юA ╦юB
+╨О ╨ю ╨а ╩ ╩ц ╨юд ╨юф ╨юх ╨и ╨иц ╨ий ╨иф ╨ифц ╨к ╨юA ╨юB
+╪О ╪ю ╪а ╫ ╫ц ╪юд ╪юф ╪юх ╪и ╪иц ╪ий ╪иф ╪ифц ╪к ╪юA ╪юB
+
+
+Pюл Pюм Pюн Pюо 
+Pюя Pюр Pюс Pют
+Pюж Pюв Pюь Pюы Pюз
+Pюш Pюэ Pющ Pюч Pюъ 
+PюЮ PюА PюБ PюЦ PюД 
+PюЕ PюФ PюХ PюИ PюЙ PюК PюЛ PюМ PюН
+
+╦ижГЖйmО  ╦аИvюAvюФ
+
+gаЕAPО
+
+╞иPюл ╔юj╣ифцzюPюgюд 
+
+╝PюКЖЕ
