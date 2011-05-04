@@ -1,6 +1,6 @@
 # ASCII to Unicode Encoding Converter for Kannada.
 
-As of now it works with Nudi encoding, This script can convert the text file with Nudi encoded text to Unicode.
+As of now it works with Nudi and Baraha encoding, This script can convert the text file with Nudi/Baraha encoded text to Unicode.
 
 ## Usage
 
@@ -17,7 +17,7 @@ Example(Windows users)
 
 ## [TODO]
 
-1. Test with Baraha encoding
+1. Test with Baraha encoding - Completed [May 4th]
 2. Analyze and adopt encoding used in KannadaPrabha
 3. Fix issues if any
 4. Web interface for online use and JSONP API

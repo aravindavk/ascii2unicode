@@ -100,11 +100,17 @@ def process_line(line):
 
 
 if __name__ == "__main__":
+    valid_encodings = {"nudi":"nudi", "baraha":"nudi", "default":"nudi"}
+    
     if len(sys.argv) < 4 :
         print ("[ERROR] Usage: ", sys.argv[0], " encoding_name input_file output_file")
     else :
         try:
-            input_encoding = __import__(sys.argv[1])
+            if sys.argv[1] in valid_encodings:
+                input_encoding = __import__(valid_encodings[sys.argv[1]])
+            else:
+                input_encoding = __import__(valid_encodings["default"])
+                
             mappings = input_encoding.mappings
             broken_cases = input_encoding.broken_cases
             dependent_vowels = input_encoding.dependent_vowels
