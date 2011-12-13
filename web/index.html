@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="ನುಡಿ/ಬರಹದಲ್ಲಿ ಬರೆದಿದ್ದನ್ನು ಯುನಿಕೋಡ್ ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಲು ಸಹಾಯ ಮಾಡುವ ತಂತ್ರಾಂಶ ಇದು.">
+    <meta name="keywords" content="ascii2unicode, kannada, encoding converter">
+    <title>@aravindavk - ASCII to Unicode Convereter for Kannada</title>
+    <link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="1200.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="a2u.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container_12">
+        <div class="grid_6">
+          <h1><span style="color:#fff">ASCII</span><span style="color:#999">2</span><span style="color:orange">UNICODE</span></h1>
+          <span class="subtitle">Text Encoding Converter for Kannada</span>
+        </div>
+        <div class="grid_6">
+          <div id="main-menu-bar1">
+            <span>Converter</span>
+            <a href="#about">About</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="converter-container">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="sep clear"></div>
+          <p>ನುಡಿ ಅಥವಾ ಬರಹ ಉಪಯೋಗಿಸಿ ಬರೆದ ಲೇಖನ ಅಥವಾ ಪಠ್ಯವನ್ನು ಯುನಿಕೋಡ್ ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಬೇಕಿದ್ದರೆ, ಆ ಪಠ್ಯವನ್ನು ಕೆಳಗಿನ ಜಾಗದಲ್ಲಿ ಹಾಕಿ "Convert" ಬಟನ್ ಒತ್ತಿ.</p>
+          <p>ಏನಾದರೂ ತೊಂದರೆ ಇದ್ದರೆ ನನ್ನ ಈಮೈಲ್(&#114;&#111;&#111;&#116;&#64;&#97;&#114;&#97;&#118;&#105;&#110;&#100;&#97;&#118;&#107;&#46;&#105;&#110;) ವಿಳಾಸಕ್ಕೆ ಸಂದೇಶ ಕಳಿಸಿ, ಹಾಗೇ ಉಪಯೋಗವಾದರೂ ಸಂತಸವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ :)  </p>
+          <div class="sep clear"></div>
+        </div>
+        <div class="grid_6">
+          <h3>ನುಡಿ/ಬರಹದಲ್ಲಿ ಬರೆದ ಪಠ್ಯ</h3>
+          <div class="half-sep clear"></div>
+          <textarea id="input-box">J®ègÉÆ¼ÀUÉÆAzÁUÀÄ ªÀÄAPÀÄwªÀÄä</textarea>
+          <div id="actions-bar">
+            <a id="clear-button">clear</a>
+            <a id="convert-button">convert</a>
+          </div>
+        </div>
+        <div class="grid_6">
+          <h3>ಯುನಿಕೋಡ್ ಗೆ ಬದಲಾವಣೆಗೊಂಡ ಪಠ್ಯ</h3>
+          <div class="half-sep clear"></div>
+          <textarea id="output-box"></textarea>
+        </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="sep clear"></div>
+    </div>
+    <div id="about">
+      <div class="container_12">
+        <div class="grid_8">
+          <div class="sep clear"></div>
+          <h1>About</h1>
+          <div class="half-sep clear"></div>
+          <p>ನುಡಿ/ಬರಹದಲ್ಲಿ ಬರೆದಿದ್ದನ್ನು ಯುನಿಕೋಡ್ ಕನ್ನಡಕ್ಕೆ ಬದಲಾಯಿಸಲು ಸಹಾಯ ಮಾಡುವ ತಂತ್ರಾಂಶ ಇದು. ಎಡಗಡೆ ಇರುವ ಜಾಗದಲ್ಲಿ ನುಡಿ/ಬರಹ ದಲ್ಲಿ ಬರೆದ ಪಠ್ಯವನ್ನು ಹಾಕಿ ನಂತರ ಕನ್ವರ್ಟ್ ಅಂತ ಇರುವ ಬಟನ್ ಒತ್ತಿ. ಪಕ್ಕದ ಜಾಗದಲ್ಲಿ ಯುನಿಕೋಡ್ ಗೆ ಬದಲಾವಣೆಗೊಂಡು ಕಾಣಿಸುತ್ತದೆ, ಅದನ್ನು ಕಾಪಿ ಮಾಡಿಕೊಂಡು ಫೈಲ್ ಗಳಲ್ಲಿ ಸೇವ್ ಮಾಡಿಕೊಳ್ಳಿ. </p>
+          <div class="sep clear"></div>
+          <p>ಈ ತಂತ್ರಾಂಶದ ಮೊದಲ ಆವೃತ್ತಿ Python ಎಂಬ ಕಂಪ್ಯೂಟರ್ ಭಾಷೆ ಬಳಸಿ ಮಾಡಿದ್ದೆ, ಈಗ ಈ ಅಂತರ್ಜಾಲ ಪುಟದಲ್ಲಿ ಬಳಸಲು JavaScript ನಲ್ಲಿ ಬರೆದಿದ್ದೇನೆ. ನಾನು ಬರೆದಿದ್ದೆಲ್ಲವೂ <a href="http://www.gnu.org/copyleft/gpl.html">GPL v3</a> ಮುಕ್ತ ಲೈಸೆನ್ಸ್ ನಲ್ಲಿ ಲಬ್ಯ. ಈ ತಂತ್ರಾಂಶದ source ಕೆಳಗಿನ ಲಿಂಕ್ ನಲ್ಲಿ ನಿಮಗೆ ಸಿಗುತ್ತದೆ. <br />
+            <div class="half-sep clear"></div>
+            <a href="https://github.com/aravindavk/ascii2unicode">https://github.com/aravindavk/ascii2unicode</a>
+            <div class="sep clear"></div>
+            <div class="sep clear"></div>
+            <p>ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ನನ್ನನ್ನು ಸಂಪರ್ಕಿಸಬಹುದು, &#114;&#111;&#111;&#116;&#64;&#97;&#114;&#97;&#118;&#105;&#110;&#100;&#97;&#118;&#107;&#46;&#105;&#110;&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://aravindavk.in">http://aravindavk.in</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://twitter.com/aravindavk">http://twitter.com/aravindavk</a></p>
+            <div class="sep clear"></div>
+          </p>
+        </div>
+        <div class="grid_4">
+          <div id="main-menu-bar3">
+            <a href="#">Converter</a>
+            <span>About</span>
+          </div>
+        </div>
+      </div>
+     
+      <div class="clear" style="height:500px;"> </div>
+    </div>
+    <script type="text/javascript" src="jquery-1.5.js"></script>
+    <script type="text/javascript" src="map_nudi_baraha.js"></script>
+    <script type="text/javascript" src="a2u.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+      var converter = new Ascii2UnicodeConverter();
+      converter.init();
+      });
+    </script>
+  </body>
+</html>

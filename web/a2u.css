@@ -1,0 +1,125 @@
+/* ASCII2Unicode Kannada Text Encoding converter */
+/* Copyright (C) 2011  Aravinda VK <hallimanearavind@gmail.com>         */
+
+/* This program is free software: you can redistribute it and/or modify */
+/* it under the terms of the GNU General Public License as published by */
+/* the Free Software Foundation, either version 3 of the License, or */
+/* (at your option) any later version. */
+
+/* This program is distributed in the hope that it will be useful, */
+/* but WITHOUT ANY WARRANTY; without even the implied warranty of */
+/* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the */
+/* GNU General Public License for more details. */
+
+/* You should have received a copy of the GNU General Public License */
+/* along with this program.  If not, see <http://www.gnu.org/licenses/>. */
+
+body{
+    font-size:14px;
+    line-height:24px;
+    font-family:Helvetica, Arial, sans-serif;
+}
+#header{
+    background-color:#333;
+    height:30px;
+    padding:20px 0 20px 0;
+}
+#header .subtitle{
+    color:#ccc;
+}
+#header h1{
+    font-size:30px;
+}
+#main-menu-bar1{
+    text-align:right;
+    margin:10px 0 5px 0;
+}
+#main-menu-bar1 a{
+    text-decoration:none;
+    color:#fff;
+    font-size:15px;
+    margin-left:20px;
+}
+#main-menu-bar1 span{
+    text-decoration:none;
+    color:#999;
+    font-size:15px;
+    margin-left:20px;
+}
+#main-menu-bar1 a:hover{
+    color:#999;
+}
+#main-menu-bar2, #main-menu-bar3{
+    text-align:right;
+    margin:10px 0 5px 0;
+}
+#main-menu-bar2 a, #main-menu-bar3 a{
+    text-decoration:none;
+    color:#000;
+    font-size:15px;
+    margin-left:20px;
+}
+#main-menu-bar2 span, #main-menu-bar3 span{
+    text-decoration:none;
+    color:#777;
+    font-size:15px;
+    margin-left:20px;
+}
+#main-menu-bar2 a:hover, #main-menu-bar3 a:hover{
+    color:#777;
+}
+
+#actions-bar{
+    text-align:right;
+    margin-top:10px;
+}
+#convert-button, #clear-button{
+    display:inline-block;
+    padding:5px 10px;
+    text-align:center;
+    border-radius:7px;
+    cursor:pointer;
+}
+#convert-button{
+    background-color:#333;
+    color:#fff;    
+}
+#clear-button{
+    color:#fff;
+    background-color:#d2691e;
+}
+#convert-button:hover{
+    background-color:#777;
+}
+#clear-button:hover{
+    background-color:#a52a2a;
+}
+#input-box, #output-box{
+    width:538px;
+    border:1px solid #aaa;
+    height:300px;
+    padding:20px;
+    line-height:22px;
+}
+.sep{
+    height:20px;
+}
+.half-sep{
+    height:10px;
+}
+
+#help{
+    padding:20px 0 20px 0;
+    background-color:#ddd;
+}
+#about{
+    padding:20px 0 20px 0;
+    background-color:#faf0e6;
+}
+#help h1, #about h1{
+    font-size:20px;
+}
+#converter-container{
+    padding:20px 0 20px 0;
+    background-color:#eee;
+}

@@ -2,6 +2,10 @@
 
 As of now it works with Nudi and Baraha encoding, This script can convert the text file with Nudi/Baraha encoded text to Unicode.
 
+## Online Use
+
+Online version is available in [aravindavk.github.com/ascii2unicode](aravindavk.github.com/ascii2unicode)
+
 ## Usage
 
     <path to python3> <path to converter.py> <encoding_name> <input_file> <output_file>
