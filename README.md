@@ -6,23 +6,24 @@ As of now it works with Nudi and Baraha encoding, This script can convert the te
 
 Online version is available in [http://aravindavk.github.com/ascii2unicode/](http://aravindavk.github.com/ascii2unicode/)
 
-## Usage
+[![ASCII2Unicode](ascii2unicode.png)](http://aravindavk.github.com/ascii2unicode/)
 
-    <path to python3> <path to converter.py> <encoding_name> <input_file> <output_file>
+## Commandline Tool
 
-Example(Linux Users)
+As of now supported only Linux, and this tool uses Python 3. Download "[knconverter]" and copy to `/usr/local/bin` folder(`sudo cp ~/Downloads/knconverter /usr/local/bin/`)
 
-    python3 converter.py nudi sample_input.txt clean_text.txt
+    cat my_ascii_file.txt | knconverter > output.txt
 
-Example(Windows users)
+.
 
-    C:\python32\python.exe converter.py nudi sample_input.txt clean_text.txt
+    knconverter my_ascii_file.txt
+
+.
+
+    knconverter my_ascii_file.txt -o output.txt
 
 
-## [TODO]
+## Blogs
 
-1. Test with Baraha encoding - Completed [May 4th]
-2. Analyze and adopt encoding used in KannadaPrabha
-3. Fix issues if any
-4. Web interface for online use and JSONP API
-5. Converter GUI 
+1. [http://aravindavk.in/blog/ascii2unicode-converter-kannada/](http://aravindavk.in/blog/ascii2unicode-converter-kannada/)
+

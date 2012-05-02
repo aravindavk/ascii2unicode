@@ -1,21 +1,72 @@
-// ASCII2Unicode Kannada Text Encoding converter
-// Copyright (C) 2011, 2012 Aravinda VK <hallimanearavind@gmail.com>
-//                                      <http://aravindavk.in>
+#!/usr/bin/python3
+#-*- coding:utf-8 -*-
 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+# ASCII2Unicode Kannada Text Encoding converter
+# Copyright (C) 2011  Aravinda VK <hallimanearavind@gmail.com>        
 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 
-var mapping = {
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+dependent_vowels = ["ಾ", "ಿ", "ೀ", "ು", "ೂ", "ೃ", "ೆ", "ೇ", "ೈ", "ೊ", "ೋ", "ೌ"]
+
+ignoreList = ["ö", "÷"]
+
+broken_cases = {"Ã":{"value": "ೀ", "mapping": {"ಿ": "ೀ", "ೆ": "ೇ", "ೊ": "ೋ"}}, # as in kI
+                "Ä":{"value": "ು", "mapping": {}}, # as in ku
+                "Æ":{"value": "ೂ", "mapping": {"ೆ":"ೊ"}}, # when prev letter is dependent E then it must be dependent O
+                "È":{"value": "ೃ", "mapping": {}}, # as in kRRi
+                "Ê":{"value": "ೈ", "mapping": {"ೆ":"ೈ"}}  # as in kai
+                }
+
+
+vattaksharagalu = {
+    "Ì": "ಕ",
+    "Í": "ಖ",
+    "Î": "ಗ",
+    "Ï": "ಘ",
+    "Ñ": "ಚ",
+    "Ò": "ಛ",
+    "Ó": "ಜ",
+    "Ô": "ಝ",
+    "Ö": "ಟ",
+    "×": "ಠ",
+    "Ø": "ಡ",
+    "Ù": "ಢ",
+    "Ú": "ಣ",
+    "Û": "ತ",
+    "Ü": "ಥ",
+    "Ý": "ದ",
+    "Þ": "ಧ",
+    "ß": "ನ",
+    "à": "ಪ",
+    "á": "ಫ",
+    "â": "ಬ",
+    "ã": "ಭ",
+    "ä": "ಮ",
+    "å": "ಯ",
+    "æ": "ರ",
+    "è": "ಲ",
+    "é": "ವ",
+    "ê": "ಶ",
+    "ë": "ಷ",
+    "ì": "ಸ",
+    "í": "ಹ",
+    "î": "ಳ",
+    "ð": "ರ",
+    "ç": "ರ"
+    }
+
+mappings = {
     "C": "ಅ",
     "D": "ಆ",
     "E": "ಇ",
@@ -33,7 +84,7 @@ var mapping = {
     "B": "ಃ",
     "Pï": "ಕ್",
     "PÀ": "ಕ",
-    "PÁ": "ಕಾ", 
+    "PÁ": "ಕಾ",
     "Q": "ಕಿ",
     "PÉ": "ಕೆ",
     "PË": "ಕೌ",
@@ -55,7 +106,6 @@ var mapping = {
     "X": "ಘಿ",
     "WÉ": "ಘೆ",
     "WË": "ಘೌ",
-    "k": "ಞ",
     "Zï": "ಚ್",
     "ZÀ": "ಚ",
     "ZÁ": "ಚಾ",
@@ -81,7 +131,6 @@ var mapping = {
     "gÉhÄ": "ಝೆ",
     "gÉhÆ": "ಝೊ",
     "gÀhiË": "ಝೌ",
-    "Y" : "ಙ",
     "mï": "ಟ್",
     "l": "ಟ",
     "mÁ": "ಟಾ",
@@ -174,13 +223,9 @@ var mapping = {
     "ªÀiË": "ಮೌ",
     "AiÀiï": "ಯ್",
     "AiÀÄ": "ಯ",
-    "0iÀÄ": "ಯ",
     "AiÀiÁ": "ಯಾ",
-    "0iÀiÁ": "ಯಾ",
     "¬Ä": "ಯಿ",
-    "0iÀÄÄ": "ಯು",
     "AiÉÄ": "ಯೆ",
-    "0iÉÆ": "ಯೊ",
     "AiÉÆ": "ಯೊ",
     "AiÀiË": "ಯೌ",
     "gï": "ರ್",
@@ -207,10 +252,6 @@ var mapping = {
     "ªÉÇ":"ವೊ",
     "ªÉÇÃ":"ವೋ",
     "ªÉ  ": "ವೆ",
-    "¥ÀÅ": "ಪು",
-    "¥ÀÇ" : "ಪೂ",
-    "¥sÀÅ" : "ಫು", 
-    "¥sÀÇ" : "ಫೂ",
     "ªË": "ವೌ",
     "±ï": "ಶ್",
     "±À": "ಶ",
@@ -242,84 +283,5 @@ var mapping = {
     "½": "ಳಿ",
     "¼É": "ಳೆ",
     "¼Ë": "ಳೌ"
-};
+    }
 
-// These when joined will be broken as per unicode 
-var broken_cases = {
-    "Ã":{
-        "value": "ೀ",
-        "mapping": {
-            "ಿ": "ೀ",
-            "ೆ": "ೇ",
-            "ೊ": "ೋ"
-            }
-        }, 
-    "Ä":{
-        "value": "ು",
-        "mapping": {
-            
-            }
-        }, 
-    "Æ":{
-        "value": "ೂ",
-        "mapping": {
-            "ೆ":"ೊ"
-            }
-        }, 
-    "È":{
-        "value": "ೃ",
-        "mapping": {
-            
-            }
-        }, 
-    "Ê":{
-        "value": "ೈ",
-        "mapping": {
-            "ೆ":"ೈ"
-            }
-        }  
-    };
-
-var dependent_vowels = ["್", "ಾ", "ಿ", "ೀ", "ು", "ೂ", "ೃ", "ೆ", "ೇ", "ೈ", "ೊ", "ೋ", "ೌ"];
-var ignore_list = {"ö": "", "÷": ""};
-
-var vattaksharagalu = {
-    "Ì": "ಕ",
-    "Í": "ಖ",
-    "Î": "ಗ",
-    "Ï": "ಘ",
-    "Õ": "ಞ",
-    "Ñ": "ಚ",
-    "Ò": "ಛ",
-    "Ó": "ಜ",
-    "Ô": "ಝ",
-    "Ö": "ಟ",
-    "×": "ಠ",
-    "Ø": "ಡ",
-    "Ù": "ಢ",
-    "Ú": "ಣ",
-    "Û": "ತ",
-    "Ü": "ಥ",
-    "Ý": "ದ",
-    "Þ": "ಧ",
-    "ß": "ನ",
-    "à": "ಪ",
-    "á": "ಫ",
-    "â": "ಬ",
-    "ã": "ಭ",
-    "ä": "ಮ",
-    "å": "ಯ",
-    "æ": "ರ",
-    "è": "ಲ",
-    "é": "ವ",
-    "ê": "ಶ",
-    "ë": "ಷ",
-    "ì": "ಸ",
-    "í": "ಹ",
-    "î": "ಳ",
-    "ç": "ರ"
-};
-
-var ascii_arkavattu = {
-    "ð": "ರ"
-};
