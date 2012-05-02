@@ -6,7 +6,7 @@ As of now it works with Nudi and Baraha encoding, This script can convert the te
 
 Online version is available in [http://aravindavk.github.com/ascii2unicode/](http://aravindavk.github.com/ascii2unicode/)
 
-[![ASCII2Unicode](ascii2unicode.png)](http://aravindavk.github.com/ascii2unicode/)
+[![ASCII2Unicode](https://github.com/aravindavk/ascii2unicode/raw/master/ascii2unicode.png)](http://aravindavk.github.com/ascii2unicode/)
 
 ## Commandline Tool
 
