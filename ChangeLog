@@ -15,3 +15,4 @@
 2012-08-01 Aravinda VK <mail@aravindavk.in>
 	* ಮೊ and ಮೋ was converted as ವೊ and ವೋ(Issue reported by Ganesh Kamath) - Fixed
 	* ZWJ is working, Ex: ಗ್ರಿಡ್‍ಗೆ, These cases when converted joining as ಗ್ರಿಡ್ಗೆ  - Fixed
+	* Additional option "ಆಂಗ್ಲ ಸಂಖ್ಯೆಗಳು" while converting (only in web version) 

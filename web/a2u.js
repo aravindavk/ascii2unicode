@@ -258,6 +258,20 @@ function converter_init(){
     bind_events();
 }
 
+function convert_to_english_numbers(text_input){
+    return text_input
+        .replace(/೦/g, 0)
+        .replace(/೧/g, 1)
+        .replace(/೨/g, 2)
+        .replace(/೩/g, 3)
+        .replace(/೪/g, 4)
+        .replace(/೫/g, 5)
+        .replace(/೬/g, 6)
+        .replace(/೭/g, 7)
+        .replace(/೮/g, 8)
+        .replace(/೯/g, 9);
+}
+
 function bind_events(){
     $("#clear-button").click(function(){
                                  $("#input-box").val('').focus();
@@ -265,6 +279,9 @@ function bind_events(){
     
     $("#convert-button").click(function(){
                                    var unicode_output = kn_ascii2unicode($("#input-box").val());
+                                   if ($("#english-numbers").attr("checked")) {
+                                       unicode_output = convert_to_english_numbers(unicode_output);
+                                   }
                                    $("#output-box").val(unicode_output); 
                                });
     
