@@ -152,8 +152,15 @@ function find_mapping(op, txt, current_pos){
     for(var i = max_len; i >= 0; i--) {
         var substr_till = current_pos + i + 1;
         var t = txt.substring(current_pos, substr_till);
-
+       
         if(mapping[t]){
+            // If prev char is halant and current char is not vattakshara?
+            // then it must be seperated using ZWJ, so that it will not
+            // mix with prev char. 
+            if (op[op.length -1] && op[op.length -1 ].match(/್$/)){
+                var zwj =  "‍";
+                op.push(zwj); 
+            }
             // Direct mapping case
             op.push(mapping[t]);
 

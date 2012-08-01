@@ -1,0 +1,17 @@
+2012-05-03 Aravinda VK <mail@aravindavk.in>
+	* ಶ್ರೀನಿಧಿ. ಟಿಜಿ ಹೇಳಿದ ಜ್ಞ ಅಕ್ಷರದ ತೊಂದರೆ. The new converter is cool. Thanks.
+	ಆದರೆ ನಾನು ಪ್ರಯತ್ನಿಸಿದಾಗ ಆಸ್ಕಿಯ 'ಜ್ಞ' ಸರಿಯಾಗಿ ಕನ್‌ವರ್ಟ್ ಆಗಲಿಲ್ಲ. '«eÁÕ£À' ಎಂದಿರುವುದು 'ವಿಜಾÕನ' ಅಂತ ಬರ್ತಿದೆ.
+	* ರಾಕೇಶ್ ಶೆಟ್ಟಿಯವರು ಹೇಳಿದ "ಪು" ಅಕ್ಷರ ಹಾಗೂ ಅರ್ಕಾವತ್ತಿನ ತೊಂದರೆ. ಅರ್ಕ ಒತ್ತುಗಳು ಸರಿಯಾಗಿ ’ರ’ ಒತ್ತುಗಳಾಗುತ್ತಿವೆ.
+	ಉದಾ : ’ಅರ್ಕ’ ಅನ್ನುವುದು ’ಅಕ್ರ’ ಅಂತಾಗುತ್ತಿದೆ. "ಪುಸ್ತಕ" ಅನ್ನುವುದು "ಪAಸ್ತಕ" ವಾಗುತ್ತಿದೆ - Rakesh
+	Naveen Viegas ಹಾಗೂ Nagendra K, BizVant Solutions ಕೂಡ ಅರ್ಕಾವತ್ತಿನ ತೊಂದರೆಯ ಬಗ್ಗೆ ತಿಳಿಸಿದ್ದರು
+        I have a problem. When I Convert a word that contains Arka vottu (ರ್ವ)
+	that typed using nudi, converts into (ವ್ರ) - Naveen Viegas
+	* ಎಂ.ಎಸ್. ಮುರಳಿಧರ್, ಶಿರಾ. ರವರು ಹೇಳಿದ ತೊಂದರೆಗಳು.
+        ನಾನು ಗುರುತಿಸಿದ ಪ್ರಮುಖ ತಪ್ಪೆಂದರೆ, ಅರ್ಕಾವತ್ತುಗಳು, ’ರ’ ವತ್ತುಗಳಾಗುತ್ತವೆ. ಪು ಹೋಗಿ ಪ ಆಗಿರುತ್ತದೆ.
+	ಯಿ ಎಂಬುದು ಒಂದೊಂದುಸಾರಿ ಸರಿಯಾಗಿ ಬರುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು ಇದರ ಕುರಿತು ತಾವು ಕ್ರಮ ಕೈಗೊಂಡರೆ ತುಂಬಾ ಅನುಕೂಲವಾಗುತ್ತದೆ.
+	* ಪದಗಳ ಕೊನೆಯಲ್ಲಿ ಒತ್ತಕ್ಷರ ಬಂದಾಗ ಸರಿಯಾಗಿ ಬರುತ್ತಿರಲಿಲ್ಲ. ಅದನ್ನು ಸರಿಪಡಿಸಿದ್ದೇನೆ.
+	* IE browser ನಲ್ಲಿ ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತಿರಲಿಲ್ಲ - Fixed
+
+2012-08-01 Aravinda VK <mail@aravindavk.in>
+	* ಮೊ and ಮೋ was converted as ವೊ and ವೋ(Issue reported by Ganesh Kamath) - Fixed
+	* ZWJ is working, Ex: ಗ್ರಿಡ್‍ಗೆ, These cases when converted joining as ಗ್ರಿಡ್ಗೆ  - Fixed

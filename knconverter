@@ -21,6 +21,7 @@
 import sys
 import codecs
 import argparse
+import re
 
 # Direct mapping of ASCII chars to Unicode
 mapping = {
@@ -212,6 +213,8 @@ mapping = {
     "ªÉ"    :"ವೆ",
     "ªÉÃ"   :"ವೇ",
     "ªÉÊ"   :"ವೈ",
+    "ªÉÆ"   :"ಮೊ",
+    "ªÉÆÃ"  :"ಮೋ",
     "ªÉÇ"   :"ವೊ",
     "ªÉÇÃ"  :"ವೋ",
     "ªÉ  "  : "ವೆ",
@@ -468,6 +471,13 @@ def find_mapping(op, txt, current_pos):
         t = txt[current_pos:substr_till]
 
         if t in mapping:
+            # If prev char is halant and current char is not vattakshara?
+            # then it must be seperated using ZWJ, so that it will not
+            # mix with prev char. 
+            if len(op) > 0 and re.search("್$", op[-1]) != None:
+                zwj =  "‍"
+                op.append(zwj)
+                
             # Direct mapping case
             op.append(mapping[t])
 
