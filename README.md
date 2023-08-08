@@ -4,7 +4,7 @@ As of now it works with Nudi and Baraha encoding, This script can convert the te
 
 ## Online Use
 
-Online version is available in [http://aravindavk.github.com/ascii2unicode/](http://aravindavk.github.com/ascii2unicode/)
+Online version is available in [https://aravindavk.in/ascii2unicode/](https://aravindavk.in/ascii2unicode/)
 
 [![ASCII2Unicode](https://github.com/aravindavk/ascii2unicode/raw/master/ascii2unicode.png)](http://aravindavk.github.com/ascii2unicode/)
 
