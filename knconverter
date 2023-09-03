@@ -23,20 +23,20 @@ import codecs
 import argparse
 import re
 
-# Direct mapping of ASCII chars to Unicode
+# Direct mapping of Unicode chars to ASCII
 mapping = {
-    "C"     : "ಅ",
-    "D"     : "ಆ",
-    "E"     : "ಇ",
-    "F"     : "ಈ",
-    "G"     : "ಉ",
-    "H"     : "ಊ",
-    "IÄ"    : "ಋ",
-    "J"     : "ಎ",
-    "K"     : "ಏ",
-    "L"     : "ಐ",
-    "M"     : "ಒ",
-    "N"     : "ಓ",
+   "ಅ"      :  "C", 
+    "ಆ"     :  "D",
+    "ಇ"     :  "E",
+    "ಈ"    :  "F",
+     "ಉ"   : "G",
+   "ಊ"    :  "H",
+   "ಋ"    :  "IÄ",
+    "ಎ"   :  "J" ,
+    "ಏ"    :  "K",
+    "ಐ"   :  "L" ,
+    "ಒ"    :  "M",
+   "ಓ"    : "N",
     "O"     : "ಔ",
     "A"     : "ಂ",
     "B"     : "ಃ",
